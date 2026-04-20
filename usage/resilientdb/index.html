@@ -908,7 +908,7 @@ Historical and supplementary guides are also available on our <strong><a href="h
 <li><strong>Core Node (NexRes)</strong>: High-throughput, BFT-replicated state machine that orders and executes transactions with strong consistency and durability.</li>
 <li><strong>APIs (GraphQL &amp; REST)</strong>: ResilientDB exposes HTTP and GraphQL services for committing and querying transactions, making it easy to integrate with web backends, data services, and AI workflows.</li>
 <li><strong>ResVault (Wallet &amp; Extension)</strong>: Browser extension wallet that manages keys, lets users authenticate, and approve transactions from web apps, tying writes on-chain to user-controlled identities.</li>
-<li><strong>SDKs &amp; ORMs</strong>: Language-specific libraries (e.g., Python ORM, Rust SDK, ResVault SDK) that provide higher-level APIs for modeling assets, talking to GraphQL/REST, and wiring ResVault into applications.</li>
+<li><strong>SDKs &amp; ORMs</strong>: Language-specific libraries and client toolkits (e.g., Python ORM, Rust SDK, ResVault SDK, ResShare SDK) that provide higher-level APIs for modeling assets, talking to GraphQL/REST, and wiring ResilientDB services into applications.</li>
 <li><strong>Monitoring (ResLens &amp; dashboards)</strong>: Monitoring UIs and middleware (ResLens stack) that surface cluster health, performance metrics, and profiling data for running deployments.</li>
 <li><strong>Deployment Tooling (Orbit, Ansible, Docker)</strong>: Tools and playbooks for bringing up ResilientDB clusters and supporting services (GraphQL, Nginx, etc.) on local and cloud environments using Docker, Ansible, and the Orbit desktop deployer.</li>
 </ul>
@@ -959,6 +959,7 @@ Historical and supplementary guides are also available on our <strong><a href="h
 │   └── tools/                       # Dev and app tools
 │       ├── create-resilient-app/    # App scaffolding CLI
 │       ├── drawing-lib/             # Shared drawing widget
+│       ├── reshare-lib/             # ResShare SDK
 │       └── resvault/                # ResVault wallet extension
 ├── executor/                        # Transaction execution engine
 │   ├── common/                      # Common execution utilities
