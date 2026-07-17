@@ -856,12 +856,12 @@
 <img alt="build" src="https://github.com/resilientdb/resilientdb/workflows/bazel-build%20CI/badge.svg" />
 <img alt="build" src="https://github.com/resilientdb/resilientdb/workflows/Unite%20Test/badge.svg" /></p>
 <h1 id="resilientdb-global-scale-sustainable-blockchain-fabric">ResilientDB: Global-Scale Sustainable Blockchain Fabric<a class="headerlink" href="#resilientdb-global-scale-sustainable-blockchain-fabric" title="Permanent link">&para;</a></h1>
-<p><strong><a href="https://resilientdb.com/">Apache ResilientDB (Incubating)</a></strong> is a <strong>High Throughput Yielding Permissioned Blockchain Fabric</strong> founded by <strong><a href="https://expolab.org/">ExpoLab</a></strong> at <strong><a href="https://www.ucdavis.edu/">UC Davis</a></strong> in 2018. ResilientDB advocates a <strong>system-centric</strong> design by implementing a <strong>multi-threaded architecture</strong> with <strong>deep pipelines</strong>. Further, ResilientDB <strong>separates</strong> the ordering of client transactions from their execution, allowing it to <strong>process messages out of order</strong>.</p>
+<p><strong><a href="https://resilientdb.com/">Apache ResilientDB (Incubating)</a></strong> is a <strong>High Throughput Yielding Permissioned Blockchain Fabric</strong> founded by <strong>ExpoLab</strong> at <strong>UC Davis</strong> in 2018. ResilientDB advocates a <strong>system-centric</strong> design by implementing a <strong>multi-threaded architecture</strong> with <strong>deep pipelines</strong>. Further, ResilientDB <strong>separates</strong> the ordering of client transactions from their execution, allowing it to <strong>process messages out of order</strong>.</p>
 <h1 id="downloads">Downloads:<a class="headerlink" href="#downloads" title="Permanent link">&para;</a></h1>
 <p>Download address for run-directly software package: https://downloads.apache.org/incubator/resilientdb/</p>
 <h3 id="quick-facts-on-resilientdb">Quick Facts on ResilientDB<a class="headerlink" href="#quick-facts-on-resilientdb" title="Permanent link">&para;</a></h3>
 <ol>
-<li>ResilientDB orders client transactions through a highly optimized implementation of the  <strong><a href="https://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf">PBFT</a></strong> [Castro and Liskov, 1998] protocol, which helps to achieve consensus among its replicas. ResilientDB also supports deploying other state-of-the-art consensus protocols <em>[release are planned]</em> such as <strong><a href="http://www.vldb.org/pvldb/vol13/p868-gupta.pdf">GeoBFT</a></strong> [<strong><a href="https://blog.resilientdb.com/2023/03/07/GeoBFT.html">blog</a>, <a href="https://github.com/resilientdb/resilientdb/releases/tag/nexres-v1.1.0">released</a></strong>], <strong><a href="https://openproceedings.org/2021/conf/edbt/p111.pdf">PoE</a></strong>, <strong><a href="https://arxiv.org/abs/1911.00837">RCC</a></strong>, <strong><a href="https://openproceedings.org/2022/conf/edbt/paper-73.pdf">RingBFT</a></strong>, <strong><a href="https://arxiv.org/abs/2302.02325">PoC</a></strong>, <strong><a href="https://arxiv.org/abs/2302.02118">SpotLess</a></strong>, <strong><a href="https://arxiv.org/abs/1803.05069">HotStuff</a></strong>, and <strong><a href="https://arxiv.org/pdf/2105.11827.pdf">DAG</a></strong>.</li>
+<li>ResilientDB orders client transactions through a highly optimized implementation of the  <strong><a href="https://css.csail.mit.edu/6.824/2014/papers/castro-practicalbft.pdf">PBFT</a></strong> [Castro and Liskov, 1998] protocol, which helps to achieve consensus among its replicas. ResilientDB also supports deploying other state-of-the-art consensus protocols <em>[release are planned]</em> such as <strong><a href="http://www.vldb.org/pvldb/vol13/p868-gupta.pdf">GeoBFT</a></strong> [<strong><a href="https://github.com/resilientdb/resilientdb/releases/tag/nexres-v1.1.0">released</a></strong>], <strong><a href="https://openproceedings.org/2021/conf/edbt/p111.pdf">PoE</a></strong>, <strong><a href="https://arxiv.org/abs/1911.00837">RCC</a></strong>, <strong><a href="https://openproceedings.org/2022/conf/edbt/paper-73.pdf">RingBFT</a></strong>, <strong><a href="https://arxiv.org/abs/2302.02325">PoC</a></strong>, <strong><a href="https://arxiv.org/abs/2302.02118">SpotLess</a></strong>, <strong><a href="https://arxiv.org/abs/1803.05069">HotStuff</a></strong>, and <strong><a href="https://arxiv.org/pdf/2105.11827.pdf">DAG</a></strong>, to name a few.</li>
 <li>ResilientDB requires deploying at least <strong>3f+1</strong> replicas, where <strong>f (f &gt; 0)</strong> is the maximum number of arbitrary (or malicious) replicas.</li>
 <li>ResilientDB supports primary-backup architecture, which designates one of the replicas as the <strong>primary</strong> (replica with identifier <strong>0</strong>). The primary replica initiates consensus on a client transaction, while backups agree to follow a non-malicious primary.</li>
 <li>ResilientDB exposes a wide range of interfaces such as a <strong>Key-Value</strong> store, <strong>Smart Contracts</strong>, <strong>UTXO</strong>, and a <strong>Python SDK</strong>. </li>
@@ -878,23 +878,20 @@
 
 <hr />
 <h2 id="online-documentation">Online Documentation:<a class="headerlink" href="#online-documentation" title="Permanent link">&para;</a></h2>
-<p>The latest ResilientDB documentation is available on <strong><a href="https://beacon.resilientdb.com/docs/installation">Beacon</a></strong>, our unified documentation portal.<br />
-For a deep, chapter‑wise explanation of how ResilientDB works, see the <strong><a href="https://beacon.resilientdb.com/docs/resilientdb">ResilientDB overview and chapters</a></strong>.<br />
-Historical and supplementary guides are also available on our <strong><a href="https://blog.resilientdb.com/archive.html?tag=NexRes">blog repository</a></strong>.</p>
 <h4 id="table-of-contents">Table of Contents<a class="headerlink" href="#table-of-contents" title="Permanent link">&para;</a></h4>
 <ol>
 <li>Software Stack Architecture </li>
 <li>SDK, Interface/API, Platform, Execution, and Chain Layers </li>
-<li>Detailed API Documentation: <strong><a href="https://api.resilientdb.com/">Core</a></strong> and <strong><a href="https://sdk.resilientdb.com/">SDK</a></strong></li>
-<li><strong>SDK Layer:</strong> <strong><a href="https://blog.resilientdb.com/2023/02/01/UsingPythonSDK.html">Python SDK</a></strong> and <strong><a href="https://blog.resilientdb.com/2023/09/21/ResVault.html">Wallet - ResVault</a></strong></li>
-<li><strong>Interface Layer:</strong> <strong><a href="https://blog.resilientdb.com/2022/09/28/GettingStartedNexRes.html">Key-Value</a></strong>, <strong><a href="https://blog.resilientdb.com/2023/01/15/GettingStartedSmartContract.html">Solidity Smart Contract</a></strong>, <strong><a href="https://blog.resilientdb.com/2023/02/12/UtxoOnNexres.html">Unspent Transaction Output (UTXO) Model</a></strong>, ResilientDB Database Connectivity (RDBC) API</li>
-<li><strong>Platform Layer:</strong> <strong><a href="https://blog.resilientdb.com/2022/09/27/What_Is_NexRes.html">Consensus Manager Architecture (ordering, recovery, network, chain management)</a></strong></li>
-<li><strong><a href="https://blog.resilientdb.com/2023/08/22/ViewChangeInNexRes.html">Recovery &amp; Checkpoint Design</a></strong></li>
+<li>Detailed API Documentation: <strong>Core</strong> and <strong>SDK</strong></li>
+<li><strong>SDK Layer:</strong> <strong>Python SDK</strong> and <strong>Wallet - ResVault</strong></li>
+<li><strong>Interface Layer:</strong> <strong>Key-Value</strong>, <strong>Solidity Smart Contract</strong>, <strong>Unspent Transaction Output (UTXO) Model</strong>, ResilientDB Database Connectivity (RDBC) API</li>
+<li><strong>Platform Layer:</strong> <strong>Consensus Manager Architecture (ordering, recovery, network, chain management)</strong></li>
+<li><strong>Recovery &amp; Checkpoint Design</strong></li>
 <li><strong>Execution Layer:</strong> Transaction Manager Design (Runtime) </li>
-<li><strong>Chain Layer:</strong> Chain State &amp; Storage Manager Design (<strong><a href="https://blog.resilientdb.com/2023/02/15/NexResDurabilityLayer.html">durability</a></strong>) </li>
-<li><strong><a href="https://blog.resilientdb.com/2022/09/28/GettingStartedNexRes.html">Installing &amp; Deploying ResilientDB</a></strong></li>
-<li>Build Your First Application: <strong><a href="https://blog.resilientdb.com/2022/09/28/StartYourApplication.html">KV Service</a></strong>, <strong><a href="https://blog.resilientdb.com/2023/02/12/GettingStartedOnUtxo.html">UTXO</a></strong></li>
-<li>Dashboard: <strong><a href="https://blog.resilientdb.com/2022/12/06/NexResGrafanaDashboardInstallation.html">Monitoring</a></strong>, <strong><a href="https://blog.resilientdb.com/2022/12/06/DeployGrafanaDashboardOnOracleCloud.html">Deployment</a></strong>, <strong><a href="https://blog.resilientdb.com/2022/12/12/NexResGrafanaDashboardPipeline.html">Data Pipeline</a></strong></li>
+<li><strong>Chain Layer:</strong> Chain State &amp; Storage Manager Design <strong>durability</strong></li>
+<li><strong>Installing &amp; Deploying ResilientDB</strong></li>
+<li>Build Your First Application: <strong>KV Service</strong>, <strong>UTXO</strong></li>
+<li>Dashboard: <strong>Monitoring</strong>, <strong>Deployment</strong>, <strong>Data Pipeline</strong></li>
 <li>System Parameters &amp; Configuration   </li>
 <li>Continuous Integration &amp; Testing </li>
 </ol>
@@ -1496,7 +1493,6 @@ value = [v3,v2,v1]</p>
 </ol>
 <p>These tools provide full functionality up to and including <strong>deployment and interaction with smart contracts</strong>. See their individual READMEs for detailed usage and examples.</p>
 <p>In addition, you can use the <strong>Key‑Value interfaces</strong> to query or update associated balances via <code>get_balance</code> and <code>set_balance</code> commands when needed.</p>
-<p>For a full, step‑by‑step tutorial (including example JSON files, commands, and responses), see <strong><a href="https://blog.resilientdb.com/2025/02/14/GettingStartedSmartContract.html">Getting Started with Smart Contract on ResilientDB</a></strong>.</p>
 
 
 
