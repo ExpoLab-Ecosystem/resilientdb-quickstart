@@ -1074,13 +1074,13 @@
 </code></pre></div>
 <strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
-<span class="w">  </span><span class="n">createAccount</span><span class="p">(</span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;../path/to/service.config&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="n">createAccount</span><span class="p">(</span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="s">"../path/to/service.config"</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <strong>Sample Response</strong>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;createAccount&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0x3b706424119e09dcaad4acf21b10af3b33cde350&quot;</span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"createAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3b706424119e09dcaad4acf21b10af3b33cde350"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></p>
@@ -1100,15 +1100,15 @@
 <strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">compileContract</span><span class="p">(</span>
-<span class="w">    </span><span class="n">sourcePath</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;/path/to/Token.sol&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">outputPath</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;TokenCompiled.json&quot;</span>
+<span class="w">    </span><span class="n">sourcePath</span><span class="p">:</span><span class="w"> </span><span class="s">"/path/to/Token.sol"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">outputPath</span><span class="p">:</span><span class="w"> </span><span class="s">"TokenCompiled.json"</span>
 <span class="w">  </span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <strong>Sample Response</strong>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;compileContract&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Compiled successfully to TokenCompiled.json&quot;</span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"compileContract"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Compiled successfully to TokenCompiled.json"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></p>
@@ -1155,18 +1155,18 @@
 <strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">deployContract</span><span class="p">(</span>
-<span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;../path/to/service.config&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">contract</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;TokenCompiled.json&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Token.sol:Token&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">arguments</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;1000&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">owner</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0x3b706424119e09dcaad4acf21b10af3b33cde350&quot;</span>
+<span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="s">"../path/to/service.config"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">contract</span><span class="p">:</span><span class="w"> </span><span class="s">"TokenCompiled.json"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">name</span><span class="p">:</span><span class="w"> </span><span class="s">"Token.sol:Token"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">arguments</span><span class="p">:</span><span class="w"> </span><span class="s">"1000"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">owner</span><span class="p">:</span><span class="w"> </span><span class="s">"0x3b706424119e09dcaad4acf21b10af3b33cde350"</span>
 <span class="w">  </span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <strong>Sample Response</strong>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;deployContract&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;owner_address: \&quot;0x3b706424119e09dcaad4acf21b10af3b33cde350\&quot;\ncontract_address: \&quot;0xc975ab41e0c2042a0229925a2f4f544747fd66cd\&quot;\ncontract_name: \&quot;Token.sol:Token\&quot;&quot;</span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"deployContract"</span><span class="p">:</span><span class="w"> </span><span class="s2">"owner_address: \"0x3b706424119e09dcaad4acf21b10af3b33cde350\"\ncontract_address: \"0xc975ab41e0c2042a0229925a2f4f544747fd66cd\"\ncontract_name: \"Token.sol:Token\""</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></p>
@@ -1213,18 +1213,18 @@
 <strong>Example:</strong>
 <div class="highlight"><pre><span></span><code><span class="k">mutation</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="n">executeContract</span><span class="p">(</span>
-<span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;../path/to/service.config&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">sender</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0x3b706424119e09dcaad4acf21b10af3b33cde350&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">contract</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0xc975ab41e0c2042a0229925a2f4f544747fd66cd&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">functionName</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;transfer(address,uint256)&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="n">arguments</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;0x4847155cbb6f2219ba9b7df50be11a1c7f23f829,100&quot;</span>
+<span class="w">    </span><span class="n">config</span><span class="p">:</span><span class="w"> </span><span class="s">"../path/to/service.config"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">sender</span><span class="p">:</span><span class="w"> </span><span class="s">"0x3b706424119e09dcaad4acf21b10af3b33cde350"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">contract</span><span class="p">:</span><span class="w"> </span><span class="s">"0xc975ab41e0c2042a0229925a2f4f544747fd66cd"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">functionName</span><span class="p">:</span><span class="w"> </span><span class="s">"transfer(address,uint256)"</span><span class="p">,</span>
+<span class="w">    </span><span class="n">arguments</span><span class="p">:</span><span class="w"> </span><span class="s">"0x4847155cbb6f2219ba9b7df50be11a1c7f23f829,100"</span>
 <span class="w">  </span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></div>
 <strong>Sample Response</strong>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;executeContract&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Function executed successfully.&quot;</span>
+<span class="w">  </span><span class="nt">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"executeContract"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Function executed successfully."</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></p>
